@@ -1,16 +1,16 @@
 # Info 201 Final Project: Where Does It Pay To Go To School?
 
-##Project Description
+## Project Description
 ### 1. Dataset
 
-###2. Target Audience
+### 2. Target Audience
 
-###3. What the Audience Will Learn
+### 3. What the Audience Will Learn
 -
 -
 -
 
-##Technical Description
+## Technical Description
 ### 1. How will we read in the file?
 
 ### 2. Data Wrangling
