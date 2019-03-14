@@ -8,6 +8,7 @@ shinyServer(function(input, output){
     p <- ggplot(data = data, mapping = aes_string(x = "Region", y = input$percentiles, group =1, color = "Region")) +
       geom_line(size = 2) +
       geom_point(size = 5)
+    p
   })
   
   output$salary_plot <- renderPlotly({
