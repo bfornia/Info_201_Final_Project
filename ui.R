@@ -6,7 +6,11 @@ library(ggplot2)
 source("scripts/degree_comparison.R")
 source("regional_analysis.R")
 source("scripts/make_type_aggregate.R")
-source("ben.ui.R")
+
+#Define Options for SelectInput in Type Comparison Bar Chart
+salary_options <-
+  colnames(type_aggregate)[2:(length(colnames(type_aggregate)))]
+school_options <- pull(type_aggregate, School.Type)
 
 # Define UI
 shinyUI(navbarPage("Compare Universities",
@@ -82,6 +86,13 @@ shinyUI(navbarPage("Compare Universities",
                   choices = salary_options)
     ),
     mainPanel(
+      p("On this page, you have the option to compare two different types of schools based on the
+        starting salary averages, the mid-career salary average, the 10th percentile mid-career
+        salary and the 90th percentile mid-career salary.  Based on this information, you can see
+        how salaries over time are less impacted by school type, especially at higher percentiles. 
+        Also, take into account that this data does not consider that those pursuing certain majors
+        may be more inclined to attend graduate school which would increase their salary and may
+        impact the mid-career salary average."),
       plotOutput("plot_school_type")
     )
   ))))
