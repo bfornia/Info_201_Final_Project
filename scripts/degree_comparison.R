@@ -54,6 +54,7 @@ degree_comparison <- function(degrees) {
          name = "Mid-Career 90th Percentile"
        ) %>%
        layout(
+         title = "Salary Information for Different Undergraduate Majors",
          xaxis = list(title = "Degree"),
          yaxis = list(title = "Salary"),
          barmode = "group"
