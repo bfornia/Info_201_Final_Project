@@ -1,3 +1,0 @@
-two_schools <- function() {
-  
-}
