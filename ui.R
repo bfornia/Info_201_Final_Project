@@ -15,9 +15,10 @@ school_options <- pull(type_aggregate, School.Type)
 # Define UI
 shinyUI(navbarPage("Compare Universities",
   tabPanel("Introduction",
+    includeCSS("styles.css"),
     mainPanel(
       h1("Where does it pay to go to school?"),
-      p("THe big question we are asking here is, ", em("where does it pay to go to school?"),
+      p("The big question we are asking here is, ", em("where does it pay to go to school?"),
         " We break down this question by asking questions about different regions in the US,
         different academic majors, and different types of universities (liberal, Ivy, state, etc.). 
         You will be able to take a look at and compare post-graduation salary information based on 
