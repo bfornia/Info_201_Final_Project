@@ -58,20 +58,21 @@ shinyUI(navbarPage("Compare Universities",
     
     titlePanel("How Does Salary Vary Between Region of Colleges?"),
     sidebarLayout(
+    sidebarPanel(
     selectInput(
       "percentiles",
       label = "Different Percentiles",
       choices = choices,
       selected = "Mean_10th_Percentile"
-    ),
+    )),
     mainPanel(
     plotOutput("plot"),
     p("This page aims to ...")
     ))),
  tabPanel("College Types",
     titlePanel("How Does Salary Vary Between Different Types of Colleges?"),
-    sidebarLayout(
-    sidebarPanel(
+     sidebarLayout(
+      sidebarPanel(
       selectInput("school_1", h3("Select First School Type"),
                   choices = school_options),
       selectInput("school_2", h3("Select Second School Type"),
