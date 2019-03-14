@@ -25,6 +25,74 @@ northeastern_data <- regional_data %>%
 #Convert "N/A" to NA
 california_data[california_data == "N/A"] <- NA
 
+#Functions:
+
+#Gets mean of the start columm
+get_mean_start <- function(dataframe){
+  column <- (gsub(
+    "\\$", 
+    "", 
+    dataframe$Starting.Median.Salary))
+  
+  column <- as.numeric(gsub(",", "", column, fixed = TRUE))
+  mean(column, na.rm = TRUE)
+}
+
+#Gets mean of the midcareer columm
+get_mean_median <- function(dataframe){
+  column <- (gsub(
+    "\\$", 
+    "", 
+    dataframe$Mid.Career.Median.Salary))
+  
+  column <- as.numeric(gsub(",", "", column, fixed = TRUE))
+  mean(column, na.rm = TRUE)
+}
+
+#Gets mean of the 10th percentile columm
+get_mean_10th <- function(dataframe){
+  column <- (gsub(
+    "\\$", 
+    "", 
+    dataframe$Mid.Career.10th.Percentile.Salary))
+  
+  column <- as.numeric(gsub(",", "", column, fixed = TRUE))
+  mean(column, na.rm = TRUE)
+}
+
+#Gets mean of the 25th percentile columm
+get_mean_25th <- function(dataframe){
+  column <- (gsub(
+    "\\$", 
+    "", 
+    dataframe$Mid.Career.25th.Percentile.Salary))
+  
+  column <- as.numeric(gsub(",", "", column, fixed = TRUE))
+  mean(column, na.rm = TRUE)
+}
+
+#Gets mean of the 75th percentile columm
+get_mean_75th <- function(dataframe){
+  column <- (gsub(
+    "\\$", 
+    "", 
+    dataframe$Mid.Career.75th.Percentile.Salary))
+  
+  column <- as.numeric(gsub(",", "", column, fixed = TRUE))
+  mean(column, na.rm = TRUE)
+}
+
+#Gets mean of the 90th percentile column
+get_mean_90th <- function(dataframe){
+  column <- (gsub(
+    "\\$", 
+    "", 
+    dataframe$Mid.Career.90th.Percentile.Salary))
+  
+  column <- as.numeric(gsub(",", "", column, fixed = TRUE))
+  mean(column, na.rm = TRUE)
+}
+
 #Get mean for all columns
 get_mean_10th(california_data)
 get_mean_25th(california_data)
@@ -171,71 +239,3 @@ Highest_MidCareer_Salary <- c(max_cali_mid,
                               max_south_mid, 
                               max_northeast_mid)
 
-
-#Functions:
-
-#Gets mean of the start columm
-get_mean_start <- function(dataframe){
-  column <- (gsub(
-    "\\$", 
-    "", 
-    dataframe$Starting.Median.Salary))
-  
-  column <- as.numeric(gsub(",", "", column, fixed = TRUE))
-  mean(column, na.rm = TRUE)
-}
-
-#Gets mean of the midcareer columm
-get_mean_median <- function(dataframe){
-  column <- (gsub(
-    "\\$", 
-    "", 
-    dataframe$Mid.Career.Median.Salary))
-  
-  column <- as.numeric(gsub(",", "", column, fixed = TRUE))
-  mean(column, na.rm = TRUE)
-}
-
-#Gets mean of the 10th percentile columm
-get_mean_10th <- function(dataframe){
-  column <- (gsub(
-    "\\$", 
-    "", 
-    dataframe$Mid.Career.10th.Percentile.Salary))
-  
-  column <- as.numeric(gsub(",", "", column, fixed = TRUE))
-  mean(column, na.rm = TRUE)
-}
-
-#Gets mean of the 25th percentile columm
-get_mean_25th <- function(dataframe){
-  column <- (gsub(
-    "\\$", 
-    "", 
-    dataframe$Mid.Career.25th.Percentile.Salary))
-  
-  column <- as.numeric(gsub(",", "", column, fixed = TRUE))
-  mean(column, na.rm = TRUE)
-}
-
-#Gets mean of the 75th percentile columm
-get_mean_75th <- function(dataframe){
-  column <- (gsub(
-    "\\$", 
-    "", 
-    dataframe$Mid.Career.75th.Percentile.Salary))
-  
-  column <- as.numeric(gsub(",", "", column, fixed = TRUE))
-  mean(column, na.rm = TRUE)
-}
-
-#Gets mean of the 90th percentile column
-get_mean_90th <- function(dataframe){
-  column <- (gsub(
-    "\\$", 
-    "", 
-    dataframe$Mid.Career.90th.Percentile.Salary))
-  
-  column <- as.numeric(gsub(",", "", column, fixed = TRUE))
-  mean(column, na.rm = TRUE)
-}
