@@ -19,7 +19,7 @@ shinyUI(navbarPage("Compare Universities",
     mainPanel(
       h1("Where does it pay to go to school?"),
       p("The big question we are asking here is, ", em("where does it pay to go to school?"),
-        " We break down this question by asking questions about different regions in the US,
+        " We break down this question by asking questions about universites in different regions in the US,
         different academic majors, and different types of universities (liberal, Ivy, state, etc.). 
         You will be able to take a look at and compare post-graduation salary information based on 
         college type, region, and academic major."),
@@ -28,6 +28,8 @@ shinyUI(navbarPage("Compare Universities",
         each university. Using this information, students, parents, and current university 
         students can gain information in order to make a more informed decision about majors
         you want to pursue and the university/type of university you might be interested in attending."),
+      
+      # image from https://www.paladinoandco.com/wp-content/uploads/2017/08/campus_SPU_Courtesy-of-Seattle-Pacific-University.jpg
       img(src = "spu_fall.png", height = "60%", width = "60%"),
       h4("Created by Damita Gomez, Louis Ta, Benjamin Fornia, and MacKenzie Wood. 
          This page is created for the Info 201 Final Project.")
