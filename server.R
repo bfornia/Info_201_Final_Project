@@ -24,6 +24,8 @@ shinyServer(function(input, output){
                                 y = pull(filtered, input$bar_type),
                                 fill = School.Type)) +
       geom_bar(stat = "identity") +
-      ylab(input$bar_type)
+      ylab(gsub("\\.", " ", input$bar_type)) +
+      xlab("School Type") +
+      theme(axis.title = element_text(size = 14))
   })
 })
