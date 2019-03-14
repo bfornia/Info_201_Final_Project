@@ -31,7 +31,9 @@ degree_comparison <- function(degrees) {
      x = ~Undergraduate.Major,
      y = ~starting,
      name = "Starting Median",
-     type = "bar"
+     type = "bar",
+     width = 800,
+     height = 500
      ) %>%
        add_trace(
          y = ~mid_median,
@@ -54,9 +56,11 @@ degree_comparison <- function(degrees) {
          name = "Mid-Career 90th Percentile"
        ) %>%
        layout(
+         title = "Salary Information for Different Undergraduate Majors",
          xaxis = list(title = "Degree"),
          yaxis = list(title = "Salary"),
-         barmode = "group"
+         barmode = "group",
+         autosize = F
        )
   salary_plot
 }
