@@ -1,7 +1,7 @@
 library("dplyr")
 library("plotly")
 
-data <- read.csv("../data/degrees-that-pay-back.csv", stringsAsFactors = FALSE)
+data <- read.csv("data/degrees-that-pay-back.csv", stringsAsFactors = FALSE)
 
 
 # to use this function, a vector of different majors must be inputted
