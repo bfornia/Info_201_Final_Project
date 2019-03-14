@@ -5,12 +5,12 @@
 The dataset we have chosen gives salary information by college, region and academic major. Specifically, the dataset uses a "mid-career salary" as a milestone to compare these different features. The dataset we will be working on will answer the broad question: "Where does it pay to go to college?". We have broken this ambiguous question into three sub-questions that we will answer in our final project. Moreover, the dataset comes from 'The Wall Street Journal', a U.S. daily newspaper. Hence, all of the data is based in the United States.
 
 ### 2. Target Audience
-The target audience is juniors and seniors in high school and their parents.  These are the people who will most benefit from the answers to our questions when they are making decisions about where to attend college. 
+The target audience is juniors and seniors in high school and their parents.  These are the people who will most benefit from the answers to our questions when they are making decisions about where to attend college.
 
 ### 3. What the Audience Will Learn
-- What degrees have the biggest payback during mid-career?
-- What colleges have the biggest payback during mid-career?
-- Which region of colleges have the biggest payback during mid-career?
+- How does the salary vary between different undergraduate majors?
+- How does the mean salary vary between different regions of colleges?
+- How does the average salary vary between different types of colleges?
 
 ## Technical Description
 ### 1. How will we read in the file?
