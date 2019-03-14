@@ -12,13 +12,16 @@ library(plotly)
 
 source("degree_comparison.R")
 
+
 # Define UI for application that draws a histogram
 ui <- fluidPage(
-   
+   includeCSS("../styles.css"),
    # Application title
    titlePanel("Test Degrees Function"),
    
    # Sidebar with a slider input for number of bins 
+   p("Testing CSS Here"),
+   
    sidebarLayout(
       sidebarPanel(
          checkboxGroupInput(

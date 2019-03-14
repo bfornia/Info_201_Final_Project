@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Lora|Roboto+Mono:400,500');
+
+h2 {
+  font-family: "Roboto Mono", sans-serif;
+}
+#degrees {
+  font-family: "Ubuntu", sans-serif;
+}
+p {
+  font-family: "Lora", serif;
+}
