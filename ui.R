@@ -4,7 +4,7 @@ library(plotly)
 library(ggplot2)
 
 source("scripts/degree_comparison.R")
-source("regional_analysis.R")
+source("scripts/regional_analysis.R")
 source("scripts/make_type_aggregate.R")
 
 #Define Options for SelectInput in Type Comparison Bar Chart
