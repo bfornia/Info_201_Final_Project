@@ -2,10 +2,12 @@
 
 h2 {
   font-family: "Roboto Mono", sans-serif;
+  color: #4286f4;
 }
-#degrees {
+#degrees, p {
   font-family: "Ubuntu", sans-serif;
 }
-p {
-  font-family: "Lora", serif;
+#degrees {
+  overflow-y: scroll;
+  height: 500px;
 }
