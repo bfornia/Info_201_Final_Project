@@ -11,10 +11,11 @@ source("Louis.ui.R")
 server <- function(input, output){
   output$plot <- renderPlot({
     
-    data <- regional_means
+    data <- regional_data
     
-    p <- ggplot(data = data, mapping = aes_string(x = "Region", y = "Median_Salary", color = "Region")) +
-      geom_bar(stat = "identity") 
+    p <- ggplot(data = data, mapping = aes_string(x = "Region", y = input$percentiles, group =1, color = "Region")) +
+      geom_line(size = 2) +
+      geom_point(size = 5)
     
     p
   })

@@ -13,9 +13,16 @@ ui <- navbarPage(
     tabPanel(
       "Regional Data",
       
-      titlePanel("How does Mid Career Salary Vary Between Region of Colleges?"),
+      titlePanel("How Does Salary Vary Between Region of Colleges?"),
       
       p("This page aims to ..."),
+      
+      selectInput(
+        "percentiles",
+        label = "Different Percentiles",
+        choices = choices,
+        selected = "Mean_10th_Percentile"
+      ),
   
       plotOutput("plot")
     )
